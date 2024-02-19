@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+body{
+    background-color: rgb(255, 249, 238);
+}
+
+.container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.rules{
+    height: 50px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+
+.drawn-numbers-container{
+    height: 30%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2px;
+    margin: 10px 10px;
+}
+
+.drawn-item{
+    border-radius: 50%;
+    padding: 10px 10px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px; 
+    height: 25px;
+    background-color: rgb(230, 231, 241);
+    color: rgb(97, 97, 97);
+    font-weight: 600;
+    font-size: larger;
+}
+
+button{
+    margin: 20px 0;
+    padding: 10px 10px;
+    min-height: 4rem;
+    min-width: 10rem;
+    border-radius: 20px 20px;
+    border: none;
+    background-color: rgb(230, 231, 241);
+    color: rgb(97, 97, 97);
+    cursor: pointer;
+    font-size: x-large;
+    font-weight: 400;
+}
+
+.card-container{
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.card{
+    margin:  20px 20px;
+    border: solid 1px rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+    padding: 2px;
+}
+
+.card-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px; 
+    height: 80px;
+    background-color: rgb(230, 231, 241);
+    color: rgb(97, 97, 97); 
+    /* cursor: pointer; */
+    font-weight: 600;
+}
+.winner-container{
+    position: absolute;
+    padding: 30px 0;
+    width: 300px;
+    height: 90vh;
+    top: 10px;
+    right: 50px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.winner{
+    border: none;
+    border-radius: 20px 20px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.hidden{
+    display: none;
+}
